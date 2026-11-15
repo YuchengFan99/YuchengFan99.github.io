@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yucheng Fan (樊宇澄) | UNSW Sydney</title>
+<meta name="description" content="Yucheng Fan, PhD candidate at UNSW Sydney. AI for Science, multiscale modelling and multifunctional carbon nanomaterial reinforced cementitious composites for smart infrastructure.">
+<meta property="og:title" content="Yucheng Fan (樊宇澄) | UNSW Sydney">
+<meta property="og:description" content="AI for Science · Multiscale modelling · Smart cementitious composites">
+<meta property="og:image" content="assets/img/pubs/carbon-2026-multifunctional.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><span class="brand-mark">YF</span><span class="brand-name" data-en="Yucheng Fan" data-zh="樊宇澄">Yucheng Fan</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about" data-en="About" data-zh="关于">About</a>
+    <a href="#research" data-en="Research" data-zh="研究方向">Research</a>
+    <a href="#featured" data-en="Featured" data-zh="代表作">Featured</a>
+    <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
+    <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
+    <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button class="chip-btn" id="langBtn" aria-label="Switch language">中文</button>
+    <button class="chip-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
+    <button class="chip-btn burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-glow g1"></div><div class="hero-glow g2"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot"></span><span data-en="PhD Candidate · UNSW Sydney" data-zh="博士研究生 · 新南威尔士大学">PhD Candidate · UNSW Sydney</span></p>
+      <h1><span class="grad">Yucheng Fan</span><span class="zh-name">樊宇澄</span></h1>
+      <p class="typed-line"><span data-en="I work on" data-zh="我的研究：">I work on</span> <span id="typed" class="typed"></span><span class="caret">|</span></p>
+      <p class="lead" data-en="I combine multiscale modelling, experiments and machine learning to design carbon nanomaterial reinforced cementitious composites that can sense, heat, harvest and store energy, for the next generation of smart and low-carbon infrastructure."
+         data-zh="我将多尺度建模、实验与机器学习相结合，设计具有自感知、自加热、能量收集与储能功能的碳纳米材料增强水泥基复合材料，服务于下一代智能与低碳基础设施。">I combine multiscale modelling, experiments and machine learning to design carbon nanomaterial reinforced cementitious composites that can sense, heat, harvest and store energy, for the next generation of smart and low-carbon infrastructure.</p>
+      <div class="cta">
+        <a class="btn primary" href="#publications" data-en="View publications" data-zh="查看论文">View publications</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=qYnDpI4AAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a class="btn" href="https://orcid.org/0000-0001-5832-7020" target="_blank" rel="noopener">ORCID ↗</a>
+        <a class="btn" href="https://github.com/Deepcomposite" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="hero-card tilt" id="heroCard">
+      <div class="avatar-ring"><div class="avatar" id="avatar"><img src="assets/img/avatar.jpg" alt="Yucheng Fan" onerror="this.remove()"><span>YF</span></div></div>
+      <div class="hero-card-name">Yucheng Fan · 樊宇澄</div>
+      <div class="hero-card-sub" data-en="School of Civil and Environmental Engineering, UNSW Sydney" data-zh="新南威尔士大学 土木与环境工程学院">School of Civil and Environmental Engineering, UNSW Sydney</div>
+      <div class="tags">
+        <span>AI4Science</span><span data-en="Multiscale modelling" data-zh="多尺度建模">Multiscale modelling</span><span data-en="Smart concrete" data-zh="智能混凝土">Smart concrete</span><span data-en="Carbon nanomaterials" data-zh="碳纳米材料">Carbon nanomaterials</span>
+      </div>
+      <div class="loc">📍 Sydney, Australia</div>
+    </div>
+  </div>
+  <div class="wrap stats" id="stats">
+    <div class="stat"><b data-count="774">0</b><span data-en="Citations" data-zh="总被引">Citations</span></div>
+    <div class="stat"><b data-count="18">0</b><span>h-index</span></div>
+    <div class="stat"><b data-count="24">0</b><span>i10-index</span></div>
+    <div class="stat"><b id="statPubs" data-count="48">0</b><span data-en="Publications" data-zh="发表论文">Publications</span></div>
+    <div class="stat"><b id="statFirst" data-count="9">0</b><span data-en="First-author papers" data-zh="一作论文">First-author papers</span></div>
+    <div class="stat"><b data-count="3">0</b><span data-en="Granted patents" data-zh="授权专利">Granted patents</span></div>
+  </div>
+  <p class="wrap stats-note" data-en="Citation metrics from Google Scholar, November 2026." data-zh="引用数据来自 Google Scholar，截至 2026 年 11 月。">Citation metrics from Google Scholar, November 2026.</p>
+</section>
+
+<!-- journal marquee -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <h2 class="sec-title reveal"><span class="num">01</span><span data-en="About me" data-zh="关于我">About me</span></h2>
+    <div class="about-grid">
+      <div class="glass reveal">
+        <p data-en="I am a PhD candidate in the School of Civil and Environmental Engineering at UNSW Sydney. Before that I was a research assistant at The Hong Kong University of Science and Technology (Guangzhou)."
+           data-zh="我目前是新南威尔士大学（UNSW Sydney）土木与环境工程学院的博士研究生。此前曾在香港科技大学（广州）担任研究助理。">I am a PhD candidate in the School of Civil and Environmental Engineering at UNSW Sydney. Before that I was a research assistant at The Hong Kong University of Science and Technology (Guangzhou).</p>
+        <p data-en="My research sits at the intersection of materials, mechanics and AI. I build micromechanics, molecular dynamics and finite element models that link nanofillers such as graphene and carbon nanotubes to the electrical, thermal and mechanical behaviour of concrete, and I use machine learning to accelerate prediction and design. The goal is infrastructure that monitors itself, melts snow, harvests energy and lasts longer with a lower carbon footprint."
+           data-zh="我的研究位于材料、力学与人工智能的交叉点：通过细观力学、分子动力学和有限元模型，建立石墨烯、碳纳米管等纳米填料与混凝土电学、热学、力学性能之间的联系，并利用机器学习加速性能预测与材料设计。目标是让基础设施能够自我监测、融雪化冰、收集能量，同时更耐久、更低碳。">My research sits at the intersection of materials, mechanics and AI. I build micromechanics, molecular dynamics and finite element models that link nanofillers such as graphene and carbon nanotubes to the electrical, thermal and mechanical behaviour of concrete, and I use machine learning to accelerate prediction and design. The goal is infrastructure that monitors itself, melts snow, harvests energy and lasts longer with a lower carbon footprint.</p>
+        <p data-en="I have published in Carbon, Cement and Concrete Composites, Engineering Applications of Artificial Intelligence, International Journal of Mechanical Sciences, Composite Structures and Soft Matter, and I review for Elsevier journals."
+           data-zh="相关成果发表于 Carbon、Cement and Concrete Composites、Engineering Applications of Artificial Intelligence、International Journal of Mechanical Sciences、Composite Structures、Soft Matter 等期刊，并担任 Elsevier 旗下期刊审稿人。">I have published in Carbon, Cement and Concrete Composites, Engineering Applications of Artificial Intelligence, International Journal of Mechanical Sciences, Composite Structures and Soft Matter, and I review for Elsevier journals.</p>
+      </div>
+      <div class="glass reveal chart-card">
+        <h3 data-en="Publications per year" data-zh="历年发文量">Publications per year</h3>
+        <div class="bars" id="yearBars"></div>
+        <p class="muted small" data-en="Lighter segment: first-author papers." data-zh="浅色部分为一作论文。">Lighter segment: first-author papers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" class="section alt">
+  <div class="wrap">
+    <h2 class="sec-title reveal"><span class="num">02</span><span data-en="Research in focus" data-zh="研究方向">Research in focus</span></h2>
+    <div class="cards4">
+      <article class="rcard reveal tilt">
+        <div class="ricon">⚡</div>
+        <h3 data-en="Multifunctional smart concrete" data-zh="多功能智能混凝土">Multifunctional smart concrete</h3>
+        <p data-en="Self-sensing, self-heating, thermoelectric and energy-storing cementitious composites enabled by graphene, carbon nanotubes and carbon black." data-zh="基于石墨烯、碳纳米管、炭黑的自感知、自加热、热电与储能水泥基复合材料。">Self-sensing, self-heating, thermoelectric and energy-storing cementitious composites enabled by graphene, carbon nanotubes and carbon black.</p>
+        <div class="tags"><span>Piezoresistive</span><span>Thermoelectric</span><span>Supercapacitor</span></div>
+      </article>
+      <article class="rcard reveal tilt">
+        <div class="ricon">🔬</div>
+        <h3 data-en="Multiscale modelling" data-zh="多尺度建模">Multiscale modelling</h3>
+        <p data-en="From molecular dynamics at the C-S-H interface, through micromechanical homogenisation with percolation and tunnelling, to finite element and phase-field models at the structural scale." data-zh="从 C-S-H 界面的分子动力学，到考虑渗流与隧穿效应的细观力学均匀化，再到结构尺度的有限元与相场模型。">From molecular dynamics at the C-S-H interface, through micromechanical homogenisation with percolation and tunnelling, to finite element and phase-field models at the structural scale.</p>
+        <div class="tags"><span>MD</span><span>Micromechanics</span><span>FEM</span></div>
+      </article>
+      <article class="rcard reveal tilt">
+        <div class="ricon">🧠</div>
+        <h3 data-en="AI for Science" data-zh="AI for Science">AI for Science</h3>
+        <p data-en="Interpretable and data-augmented machine learning, physics-informed neural networks and multi-objective optimisation for property prediction, signal recognition and mix design." data-zh="可解释与数据增强机器学习、物理信息神经网络及多目标优化，用于性能预测、信号识别与配合比设计。">Interpretable and data-augmented machine learning, physics-informed neural networks and multi-objective optimisation for property prediction, signal recognition and mix design.</p>
+        <div class="tags"><span>PINN</span><span>CTGAN</span><span>NSGA-II</span></div>
+      </article>
+      <article class="rcard reveal tilt">
+        <div class="ricon">〰</div>
+        <h3 data-en="Soft composites and nonlinear dynamics" data-zh="软复合材料与非线性动力学">Soft composites and nonlinear dynamics</h3>
+        <p data-en="Ionic liquid enhanced dielectric elastomers and functionally graded graphene reinforced beams, plates and membranes with actively tunable vibration." data-zh="离子液体增强介电弹性体，以及振动特性可主动调控的功能梯度石墨烯增强梁、板、膜结构。">Ionic liquid enhanced dielectric elastomers and functionally graded graphene reinforced beams, plates and membranes with actively tunable vibration.</p>
+        <div class="tags"><span>Dielectric</span><span>FG-GNPRC</span><span>Vibration</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED ============ -->
+<section id="featured" class="section">
+  <div class="wrap">
+    <h2 class="sec-title reveal"><span class="num">03</span><span data-en="Featured first-author work" data-zh="一作代表作">Featured first-author work</span></h2>
+    <p class="sec-sub reveal" data-en="Click any figure to enlarge." data-zh="点击图片可放大查看。">Click any figure to enlarge.</p>
+    <div class="featured" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="section alt">
+  <div class="wrap">
+    <h2 class="sec-title reveal"><span class="num">04</span><span data-en="Publications" data-zh="论文列表">Publications</span></h2>
+    <div class="pub-tools reveal">
+      <div class="filters" id="filters"></div>
+      <input type="search" id="pubSearch" placeholder="Search title, author, journal…" aria-label="Search publications">
+    </div>
+    <p class="muted small" id="pubCount"></p>
+    <div id="pubList" class="pub-list"></div>
+
+    <h3 class="sub-title reveal" data-en="Patents" data-zh="授权专利">Patents</h3>
+    <ul class="patents reveal">
+      <li><b>ZL 202210387491.4</b><span data-en="Piezoelectric sensing road system powered by thermoelectric generation for vehicle charging, and its fabrication method (first inventor, 2023)" data-zh="基于温差发电供汽车充电的压电传感道路系统及制作方法（第一发明人，2023）">Piezoelectric sensing road system powered by thermoelectric generation for vehicle charging, and its fabrication method (first inventor, 2023)</span></li>
+      <li><b>ZL 202210513095.1</b><span data-en="Self-supplied energy-cycling simulation box for heating, preloading and electro-osmotic consolidation of soft soil (first inventor, 2023)" data-zh="加热-预压-电渗自供应的能量循环软土固结模拟箱（第一发明人，2023）">Self-supplied energy-cycling simulation box for heating, preloading and electro-osmotic consolidation of soft soil (first inventor, 2023)</span></li>
+      <li><b>ZL 202011292104.6</b><span data-en="Thermo-mechanical-electro-osmotic multi-field coupled test box for soft soil consolidation (2023)" data-zh="一种热-力-电渗多场耦合软土固结试验箱（2023）">Thermo-mechanical-electro-osmotic multi-field coupled test box for soft soil consolidation (2023)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <h2 class="sec-title reveal"><span class="num">05</span><span data-en="Education and experience" data-zh="教育与经历">Education and experience</span></h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-date">2025.09 – <span data-en="Present" data-zh="至今">Present</span></div>
+        <div class="tl-body glass">
+          <span class="badge now" data-en="Current" data-zh="目前">Current</span>
+          <h3 data-en="PhD Candidate" data-zh="博士研究生">PhD Candidate</h3>
+          <p data-en="School of Civil and Environmental Engineering, UNSW Sydney, Australia" data-zh="新南威尔士大学 土木与环境工程学院，澳大利亚悉尼">School of Civil and Environmental Engineering, UNSW Sydney, Australia</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">2024.06 – 2025.01</div>
+        <div class="tl-body glass">
+          <h3 data-en="Research Assistant" data-zh="研究助理">Research Assistant</h3>
+          <p data-en="The Hong Kong University of Science and Technology (Guangzhou), China" data-zh="香港科技大学（广州）">The Hong Kong University of Science and Technology (Guangzhou), China</p>
+        </div>
+      </div>
+      <!-- TODO: add earlier degrees (Master / Bachelor), awards and scholarships here -->
+    </div>
+
+    <h3 class="sub-title reveal" data-en="Academic service" data-zh="学术服务">Academic service</h3>
+    <div class="glass reveal"><p data-en="Peer reviewer for Elsevier journals, including Results in Engineering (verified on ORCID)." data-zh="担任 Elsevier 旗下期刊审稿人，包括 Results in Engineering（ORCID 认证记录）。">Peer reviewer for Elsevier journals, including Results in Engineering (verified on ORCID).</p></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact">
+  <div class="wrap">
+    <h2 class="big reveal" data-en="Let's connect" data-zh="欢迎联系">Let's connect</h2>
+    <p class="reveal" data-en="I am always happy to talk about smart materials, multiscale modelling and AI for Science, and I welcome collaboration." data-zh="欢迎就智能材料、多尺度建模与 AI for Science 交流合作。">I am always happy to talk about smart materials, multiscale modelling and AI for Science, and I welcome collaboration.</p>
+    <div class="cta center reveal">
+      <a class="btn primary" href="https://scholar.google.com/citations?user=qYnDpI4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://orcid.org/0000-0001-5832-7020" target="_blank" rel="noopener">ORCID</a>
+      <a class="btn" href="https://github.com/Deepcomposite" target="_blank" rel="noopener">GitHub</a>
+      <!-- To show an email button, uncomment and fill in:
+      <a class="btn" href="mailto:YOUR_EMAIL">Email</a> -->
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <span>© <span id="year"></span> Yucheng Fan</span>
+    <span class="muted" data-en="Figures are from my own publications; copyright remains with the respective publishers." data-zh="图片均来自本人已发表论文，版权归相应出版商所有。">Figures are from my own publications; copyright remains with the respective publishers.</span>
+    <a href="#top" data-en="Back to top ↑" data-zh="回到顶部 ↑">Back to top ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Figure viewer">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <img alt=""><p class="lb-cap"></p>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
