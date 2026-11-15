@@ -6,20 +6,20 @@
 
 ```
 index.html              页面内容（中英文文案都在这里，data-en / data-zh 属性）
-assets/css/style.css    样式（深色 / 浅色主题）
+assets/css/style.css    样式（米色简洁风格）
 assets/js/data.js       论文列表（增删论文只改这个文件）
-assets/js/main.js       交互逻辑（筛选、搜索、动画、语言切换）
+assets/js/main.js       交互逻辑（论文筛选、图片放大、中英文切换）
 assets/img/pubs/        论文图片
-assets/img/avatar.jpg   头像（放入后自动显示，不放则显示 YF 字母头像）
+assets/img/avatar.jpg   头像
 ```
 
 ## 常见修改
 
 - **换头像**：把照片命名为 `avatar.jpg` 放到 `assets/img/`。
-- **加论文**：在 `assets/js/data.js` 中按现有格式加一条；若有配图，把图片放到 `assets/img/pubs/` 并在 `image` 字段填文件名。第一作者为 `Yucheng Fan` 的论文若带图片，会自动出现在“代表作”区域。
-- **更新引用数**：修改 `index.html` 中 `data-count="774"` 等数字。
-- **加邮箱按钮**：在 `index.html` 的 Contact 部分取消注释并填入邮箱。
-- **补充教育经历 / 获奖**：在 `index.html` 的时间线部分（有 TODO 注释）按现有格式添加。
+- **加论文**：在 `assets/js/data.js` 中按现有格式加一条；若有配图，把图片放到 `assets/img/pubs/` 并在 `image` 字段填文件名。
+- **更新引用数**：修改 `index.html` 中 `class="metrics"` 里的数字。
+- **代表性研究**：首页两张大图卡片写在 `index.html` 的 Selected research 部分。
+- **补充教育经历 / 获奖**：在 `index.html` 的 Experience、Honours 部分按现有格式添加。
 
 ## 本地预览
 
