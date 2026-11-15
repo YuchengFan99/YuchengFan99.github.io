@@ -31,6 +31,6 @@ npx http-server -p 8765 .
 
 ## 部署到 GitHub Pages
 
-1. 在 GitHub 新建公开仓库，命名为 `Deepcomposite.github.io`。
+1. 在 GitHub 新建公开仓库，命名为 `YuchengFan99.github.io`。
 2. 把本文件夹推送到该仓库的 `main` 分支。
-3. 稍等一两分钟，访问 https://deepcomposite.github.io 。
+3. 稍等一两分钟，访问 https://yuchengfan99.github.io 。
