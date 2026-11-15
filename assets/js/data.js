@@ -1,4 +1,5 @@
 // Publication list. Edit this file to add or update papers.
+// Optional field "badge" shows a highlight label, e.g. "Highly Cited Paper".
 window.PUBLICATIONS = [
   {
     "title": "Engineering graphene and carbon nanotube reinforced cement composites for intelligent pavement as noise-resistant wireless monitoring sensors",
@@ -37,7 +38,8 @@ window.PUBLICATIONS = [
     "page": "121463",
     "doi": "10.1016/j.carbon.2026.121463",
     "type": "journal",
-    "image": "carbon-2026-multifunctional.jpg"
+    "image": "carbon-2026-multifunctional.jpg",
+    "badge": "Highly Cited Paper"
   },
   {
     "title": "Multiscale simulations of carbon nanomaterials–reinforced cementitious composites: Mechanical and durability performance",
@@ -221,6 +223,24 @@ window.PUBLICATIONS = [
     "volume": "543",
     "page": "147599",
     "doi": "10.1016/j.jclepro.2026.147599",
+    "type": "journal",
+    "image": ""
+  },
+  {
+    "title": "Physics-informed Kolmogorov–Arnold network for accurate and mechanically consistent shear capacity prediction of FRP-reinforced concrete beams",
+    "authors": [
+      "Xuan Sheng",
+      "Zheng Wang",
+      "Meng Xi",
+      "Yucheng Fan",
+      "Jinlong Liu",
+      "Yuzhuo Zhang"
+    ],
+    "journal": "Buildings",
+    "year": 2026,
+    "volume": "16(21)",
+    "page": "4434",
+    "doi": "10.3390/buildings16214434",
     "type": "journal",
     "image": ""
   },
@@ -646,12 +666,12 @@ window.PUBLICATIONS = [
     "title": "Current status and prospect of the research of thermoelectric cement-based composites (热电水泥基复合材料研究现状及展望)",
     "authors": [
       "Yucheng Fan",
-      "et al."
+      "Chuang Feng"
     ],
     "journal": "Materials Reports (材料导报)",
     "year": 2023,
-    "volume": "",
-    "page": "",
+    "volume": "37(17)",
+    "page": "21110105",
     "doi": "10.11896/cldb.21110105",
     "type": "journal",
     "image": ""
@@ -711,7 +731,8 @@ window.PUBLICATIONS = [
     "page": "5148-5158",
     "doi": "10.1002/pc.27480",
     "type": "journal",
-    "image": ""
+    "image": "",
+    "badge": "Cover Image Article"
   },
   {
     "title": "Improved compressive and flexural performances of functionally graded graphene nanoplatelet reinforced cement composites: Experiments and modelling",

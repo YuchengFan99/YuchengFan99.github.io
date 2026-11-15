@@ -77,7 +77,7 @@
       return '<article class="fcard reveal' + (i === 0 ? ' wide' : '') + '">' +
         '<button class="fimg" data-zoom="assets/img/pubs/' + p.image + '" data-cap="' + esc(p.title) + '"><img loading="lazy" src="assets/img/pubs/' + p.image + '" alt="Figure from: ' + esc(p.title) + '"></button>' +
         '<div class="fbody"><span class="venue">' + esc(p.journal) + ' ' + p.year + '</span>' +
-        '<h3>' + esc(p.title) + '</h3><p class="authors">' + authorsHTML(p.authors) + '</p>' +
+        (p.badge ? '<span class="pill hot">★ ' + esc(p.badge) + '</span>' : '') + '<h3>' + esc(p.title) + '</h3><p class="authors">' + authorsHTML(p.authors) + '</p>' +
         '<div class="flinks"><a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">' + (lang === 'zh' ? '阅读论文 ↗' : 'Read paper ↗') + '</a></div></div></article>';
     }).join('');
     observeReveals();
@@ -113,6 +113,7 @@
         '<p class="authors">' + authorsHTML(p.authors) + '</p>' +
         '<div class="pmeta"><span>' + cite(p) + '</span>' +
         (p.first ? '<span class="pill first">' + (lang === 'zh' ? '第一作者' : 'First author') + '</span>' : '') +
+        (p.badge ? '<span class="pill hot">★ ' + esc(p.badge) + '</span>' : '') +
         (p.type === 'preprint' ? '<span class="pill">' + (lang === 'zh' ? '预印本' : 'Preprint') + '</span>' : '') +
         '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">DOI ↗</a></div></div></article>';
     });
@@ -130,7 +131,7 @@
 
   /* ---------- stats, bars, marquee ---------- */
   var journals = PUBS.filter(function (p) { return p.type === 'journal'; });
-  $('#statPubs').setAttribute('data-count', PUBS.length);
+  $('#statPubs').setAttribute('data-count', journals.length);
   $('#statFirst').setAttribute('data-count', PUBS.filter(function (p) { return p.first; }).length);
 
   var names = [];
@@ -170,8 +171,8 @@
 
   /* ---------- typing ---------- */
   var PHRASES = {
-    en: ['AI for Science', 'multiscale modelling', 'smart self-sensing concrete', 'carbon nanomaterial composites', 'low-carbon infrastructure'],
-    zh: ['AI for Science', '多尺度建模', '自感知智能混凝土', '碳纳米材料复合材料', '低碳基础设施']
+    en: ['AI for Science', 'multiscale modelling', 'smart self-sensing concrete', 'carbon nanomaterial composites', 'intelligent pavements', 'low-carbon infrastructure'],
+    zh: ['AI for Science', '多尺度建模', '自感知智能混凝土', '碳纳米材料复合材料', '智能路面', '低碳基础设施']
   };
   var typeTimer;
   function startTyping() {
